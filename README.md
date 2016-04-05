@@ -1,21 +1,18 @@
-# Project Title: title here (10 words maximum)
+# Project Title: Racket Blogging Platform for GUI II Project - prsmphoto.com
 
 ### Statement
-Describe your project. Why is it interesting? Why is it interesting to you personally? What do you hope to learn? 
+We want to create a blogging platform for our GUI II Project, Prism. We've been developing this website over the semester and we have a few actual users. Unfortunately, we currently have no way to communicate the new features we've added to the website to our current userbase, which is an issue because we've been adding heaps of functionality to our website which would greatly enhance their experience. 
+
+We hope to learn how to assimilate a racket backend into a website's technology stack. 
 
 ### Analysis
-Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
 
-The idea here is to identify what ideas from the class you will use in carrying out your project. 
+Recusion will definitely be a main component of our project. We hope to create a main procedure which will recursively call itsself which will be in charge of creating the blog posts. As far as storing the information in the mongoDB database goes, I'm fairly sure this process will also be recursive. We hope to use mostly functional programming throughout this project, but we might need to use some state-modification approaches for certain tasks. 
+
 
 ### Data set or other source materials
-If you will be working with existing data, where will you get those data from? (Dowload it from a website? access it in a database? create it in a simulation you will build....)
 
-How will you convert that data into a form usable for your project?  
-
-Do your homework here: if you are pulling data from somewhere, actually go download it and look at it. Explain in some detail what your plan is for accomplishing the necessary processing.
-
-If you are using some other starting materails, explain what they are. Basically: anything you plan to use that isn't code.
+We will be creating our data through our two clients - the GUI platform, which Alex is building, and the web client, which is what James is building. These two clients will communicate to our mongoDB - the gui client will write to the database, and the web client will read from it. 
 
 ### Deliverable and Demonstration
 Explain exactly what you'll have at the end. What will it be able to do at the live demo?
@@ -26,14 +23,18 @@ Will it run on some data, like batch mode? Will you present some analytical resu
 
 Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
 
+You'll be able to create a blog post using the GUI client. The web client will read from the mongoDB and display the blog post onto the webpage. 
+
 ### Evaluation of Results
-How will you know if you are successful? 
-If you include some kind of _quantitative analysis,_ that would be good.
+
+We will know if we're successful if the three pieces we're attemtping to create can successfully communicate with our database.
 
 ## Architecture Diagram
 Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
 
 Create several paragraphs of narrative to explain the pieces and how they interoperate.
+
+![Architecture Diagram](https://s3-us-west-2.amazonaws.com/prismapp/james/images/abqgefgh0fixdlol.png)
 
 ## Schedule
 Explain how you will go from proposal to finished product. 
@@ -47,30 +48,26 @@ You will be expected to turn in code, documentation, and data (as appropriate) a
 Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-What exactly will be turned in on this day? 
+We will have the mongoDB initialized 
 
 ### Second Milestone (Fri Apr 22)
-What exactly will be turned in on this day? 
+The GUI client will be able to write to the database 
 
 ### Final Presentation (last week of semester)
-What additionally will be done in the last chunk of time?
+The Web Client will be able to take information from the database and display it onto the page.
 
 ## Group Responsibilities
 Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
 
 **Additional instructions for teams of three:** 
-* Remember that you must have prior written permission to work in groups of three (specifically, an approved `FP3` team declaration submission).
-* The team must nominate a lead. This person is primarily responsible for code integration. This work may be shared, but the team lead has default responsibility.
-* The team lead has full partner implementation responsibilities also.
-* Identify who is team lead.
 
 In the headings below, replace the silly names and GitHub handles with your actual ones.
 
-### Susan Scheme @susanscheme
-will write the....
+### James Erardi @jwerardi (leader)
+is the team lead. Additionally, James will work on the web client.
 
-### Leonard Lambda @lennylambda
-will work on...
+### Alex Cushing (alexcushing)
+will work on the GUI client.
 
-### Frank Functions @frankiefunk 
-Frank is team lead. Additionally, Frank will work on...   
+### Tyler Bainbridge (tylerjbainbridge)
+will work on the mongoDB section of the project. 
