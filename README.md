@@ -66,8 +66,8 @@ In the headings below, replace the silly names and GitHub handles with your actu
 ### James Erardi @jwerardi (leader)
 is the team lead. Additionally, James will work on the web client.
 
-### Alex Cushing (alexcushing)
+### Alex Cushing @alexcushing
 will work on the GUI client.
 
-### Tyler Bainbridge (tylerjbainbridge)
+### Tyler Bainbridge @tylerjbainbridge
 will work on the mongoDB section of the project. 
