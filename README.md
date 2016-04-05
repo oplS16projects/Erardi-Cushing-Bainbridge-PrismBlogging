@@ -34,7 +34,7 @@ Upload the architecture diagram you made for your slide presentation to your rep
 
 Create several paragraphs of narrative to explain the pieces and how they interoperate.
 
-![Architecture Diagram](https://s3-us-west-2.amazonaws.com/prismapp/james/images/abqgefgh0fixdlol.png)
+![Architecture Diagram](https://s3-us-west-2.amazonaws.com/prismapp/james/images/42wqw8kxcfixdlollol.png)
 
 ## Schedule
 Explain how you will go from proposal to finished product. 
