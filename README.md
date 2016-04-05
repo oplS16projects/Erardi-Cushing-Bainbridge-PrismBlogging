@@ -1,13 +1,13 @@
 # Project Title: Racket Blogging Platform for GUI II Project - prsmphoto.com
 
 ### Statement
-We want to create a blogging platform for our GUI II Project, Prism. We've been developing this website over the semester and we have a few actual users. Unfortunately, we currently have no way to communicate the new features we've added to the website to our current userbase, which is an issue because we've been adding heaps of functionality to our website which would greatly enhance their experience. 
+We want to create a blogging platform for our GUI II Project, Prism. We've been developing this website over the semester and we have a few actual users. Unfortunately, we currently have no way to communicate the new features we've added to the website to our users, which is an issue as we've been adding heaps of functionality to our website which would greatly enhance the user's experience.
 
-We hope to learn how to assimilate a racket backend into a website's technology stack. 
+Blog posts that we add with our GUI client to the mongoDb will then be displayed on an html page created with Racket web server.
 
 ### Analysis
 
-Recusion will definitely be a main component of our project. We hope to create a main procedure which will recursively call itsself which will be in charge of creating the blog posts. As far as storing the information in the mongoDB database goes, I'm fairly sure this process will also be recursive. We hope to use mostly functional programming throughout this project, but we might need to use some state-modification approaches for certain tasks. 
+Recursion will definitely be a main component of our project. We hope to create a main procedure which will recursively call itself which will be in charge of creating the blog posts. Blog posts will be stored as a data structure local in our project after creation in the GUI client, this data will then be added into the database as a new "document". 
 
 
 ### Data set or other source materials
@@ -48,13 +48,18 @@ You will be expected to turn in code, documentation, and data (as appropriate) a
 Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-We will have the mongoDB initialized 
+Recieving data from the GUI client on the backend.
+Connect to MongoLab database.
+Begin web-site development.
 
 ### Second Milestone (Fri Apr 22)
-The GUI client will be able to write to the database 
+Write data from GUI client to the MongoDB
+Begin front-end website development to display blog posts.
+Placeholders locations for "title" and "body" of the blog post.
 
 ### Final Presentation (last week of semester)
-The Web Client will be able to take information from the database and display it onto the page.
+Handle an HTTP "get" request from the web server
+Parse and display collection of blog post documents to the web page.
 
 ## Group Responsibilities
 Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
@@ -70,4 +75,8 @@ is the team lead. Additionally, James will work on the web client.
 will work on the GUI client.
 
 ### Tyler Bainbridge @tylerjbainbridge
-will work on the mongoDB section of the project. 
+MongoDB
+Connect to existing Prism mongoDB on MongoDB (fallback plan is a local MongoDb).
+Write blog posts from the GUI client to the database.
+Recieve a HTTP request fromm the web client and server the collection of blog documents.
+
