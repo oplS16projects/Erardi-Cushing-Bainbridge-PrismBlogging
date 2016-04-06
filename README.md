@@ -70,7 +70,7 @@ Here each group member gets a section where they, as an individual, detail what 
 In the headings below, replace the silly names and GitHub handles with your actual ones.
 
 ### James Erardi @jwerardi (leader)
-is the team lead. Additionally, James will work on the web client.
+is the team leader. Additionally, James will work on the web client.
 
 ### Alex Cushing @alexcushing
 will work on the GUI client.
