@@ -1,4 +1,4 @@
-# Project Title: Racket Blogging Platform for GUI II Project - [Prism](www.prsmphoto.com)
+# Project Title: Racket Blogging Platform for GUI II Project - [Prism](http://www.prsmphoto.com/)
 
 
 ### Statement
