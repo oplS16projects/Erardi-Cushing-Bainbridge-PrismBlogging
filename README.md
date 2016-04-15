@@ -1,5 +1,5 @@
 # Project Title: Racket Blogging Platform for GUI II Project - [Prism](http://www.prsmphoto.com/)
-
+**remember to add http://localhost:8000/servlets/test.rkt to release and remove this line later**
 
 ### Statement
 We want to create a blogging platform for our GUI II Project, Prism. We've been developing this website over the semester and we have a few actual users. Unfortunately, we currently have no way to communicate the new features we've added to the website to our users, which is an issue as we've been adding heaps of functionality to our website which would greatly enhance the user's experience.
