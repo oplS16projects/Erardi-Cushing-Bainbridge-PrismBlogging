@@ -1,5 +1,4 @@
 # Project Title: Racket Blogging Platform for GUI II Project - [Prism](http://www.prsmphoto.com/)
-**remember to add http://localhost:8000/servlets/test.rkt to release and remove this line later**
 
 ### Statement
 We want to create a blogging platform for our GUI II Project, Prism. We've been developing this website over the semester and we have a few actual users. Unfortunately, we currently have no way to communicate the new features we've added to the website to our users, which is an issue as we've been adding heaps of functionality to our website which would greatly enhance the user's experience.
@@ -52,6 +51,14 @@ Write concrete steps for your schedule to move from concept to working system.
 Recieving data from the GUI client on the backend.
 Connect to MongoLab database.
 Begin web-site development.
+
+MILESTONE I UPDATE
+We faced a few road blocks when trying to connect a mongodatabase to a racket codebase. Tyler contacted Professor Jay McCarthy, who wrote the documentation for the mongoDB racket library, but didn't hear back from him before the milestone was due.
+
+We currently have a GUI client which accepts and prints inputs and we have a web client which can read and write to a SQL database.
+
+To run the SQL database web server, you must do two things. First, since the database is currently local, you must change the database's file path to match that of your own system's. Secondly, once you run the web client in DrRacket, you must go to http://localhost:8000/servlets/test.rkt to see the web page. 
+
 
 ### Second Milestone (Fri Apr 22)
 Write data from GUI client to the MongoDB
