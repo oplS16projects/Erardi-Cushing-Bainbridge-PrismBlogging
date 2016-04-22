@@ -1,24 +1,35 @@
 #lang racket
 (require racket/gui/base)
-(require db)
+(require "newdb.rkt")
+
+
+(define (save new-value)
+  display new-value)
+
 (define textInButton%
   (class horizontal-panel%
     (super-new)
     (init-field text)
     (define (callback button event)
-      (define new-value (string-append (send output get-value) text))
-      (send output set-value new-value))
-    (define button (new button% [label "Submit"]
-                                (vert-margin 0)
-                                [parent this]
-                                [callback callback]))
-    (define output (new text-field% [label "blog"]
-                                    (vert-margin 0)
-                                    [parent this]))))
+      (define new-value (send output get-value))
+      (save new-value))
+    (define button (new button% (label "Submit")
+                        (vert-margin 0)
+                        (parent this)
+                        (callback callback)))
+    (define output (new text-field% (label "blog")
+                        (min-height 450)
+                        (min-width 400)
+                        (vert-margin 0)
+                        (parent this)))
+    ))
 
 
-(define f (new frame% [label "prism"] (min-width 400) (min-height 100)))
+(define f (new frame% (label "prism blog post GUI") (min-width 400) (min-height 500)))
+
 (define tib (new textInButton%
-                 [text " * pretend this just did something for now * "]
-                 [parent f]))
+                 (text "******")
+                 (parent f)))
+
 (send f show #t)
+
