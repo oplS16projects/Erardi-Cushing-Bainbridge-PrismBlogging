@@ -1,7 +1,6 @@
 #lang racket
-(require racket/gui/base)
+ 
 (require web-server/servlet)
-
 (provide/contract (start (request? . -> . response?)))
  
 (require web-server/formlets
@@ -13,7 +12,7 @@
 (define (start request)
   (render-blog-page
    (initialize-blog!
-    (build-path "/home/alex/Documents/school/OPL/Erardi-Cushing-Bainbridge-PrismBlogging/htdocs/"
+    (build-path "/home/jam/Programs/OPL/OPLProject/Erardi-Cushing-Bainbridge-PrismBlogging/htdocs/"
                 "blogdb.sqlite"))
    request))
  
@@ -28,17 +27,24 @@
 ; render-blog-page: blog request -> doesn't return
 ; Produces an HTML page of the content of the
 ; blog.
+(define myList '(1 2 3 4))
+
 (define (render-blog-page a-blog request)
   (define (response-generator embed/url)
     (response/xexpr
      `(html (head (title "My Blog"))
+            '(link ([rel "stylesheet"] [type "text/css"] [href
+                                                          "http://www.prsmphoto.com/stylesheets/lighttheme.css"]))
             (body
+             (h1 myList)
              (h1 "My Blog")
-             ,(render-posts a-blog embed/url)
+             '(style ((type "text/css")) "h1 { color: green }")
+             '(style ((type "text/css")) "h1 { text-align: center }")
+             1         ,(render-posts a-blog embed/url)
              (form ([action
                      ,(embed/url insert-post-handler)])
                    ,@(formlet-display new-post-formlet)
-                   (input ((type "submit"))))))))
+                   (input ([type "submit"])))))))
  
   (define (insert-post-handler request)
     (define-values (title body)
@@ -154,5 +160,8 @@
                #:quit? #f
                #:listen-ip #f
                #:port 8000
+               #:extra-files-paths
+               (list (build-path "/home/jam/Programs/OPL/OPLProject/Erardi-Cushing-Bainbridge-PrismBlogging/htdocs/"
+                "style.css"))
                #:servlet-path
                "/servlets/test.rkt")
