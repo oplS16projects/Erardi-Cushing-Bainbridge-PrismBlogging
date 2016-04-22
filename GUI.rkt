@@ -10,7 +10,7 @@
      #:database "blogs"
      #:password "prism1"))
 (define testTitle "I HOPE THIS WORKED")
-(define testBody "THIS SHOULD BE THE BODY") ;;these variables arep laceholders for what will be filled with user entered data
+(define testBody "THIS SHOULD BE THE BODY") ;;these variables are placeholders for what will be filled with user entered data
 
 (define (createBlogPost title body)
   (query-exec pgc "insert into posts.newTable values($1, $2)" title body))
@@ -24,10 +24,9 @@
   (createBlogPost title-new-value new-value))
 
 
-(define textInButton%
+(define blogPost%
   (class horizontal-panel%
     (super-new)
-    (init-field text)
     (define (callback button event)
       (define title-new-value (send titleoutput get-value))
       (define new-value (send output get-value))
@@ -41,11 +40,11 @@
     (define titleoutput (new text-field% (label "    title")
                              (min-height 20)
                              (min-width 200)
-                             (vert-margin 0)
                              (parent this)))
     (define output (new text-field% (label "blog")
                         (min-height 450)
                         (min-width 400)
+                        (stretchable-width 300)
                         (vert-margin 0)
                         (parent this)))
     ))
@@ -53,8 +52,7 @@
 
 (define f (new frame% (label "prism blog post GUI") (min-width 400) (min-height 500)))
 
-(define tib (new textInButton%
-                 (text "******")
+(define tib (new blogPost%
                  (parent f)))
 
 (send f show #t)
