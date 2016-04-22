@@ -65,6 +65,14 @@ Write data from GUI client to the MongoDB
 Begin front-end website development to display blog posts.
 Placeholders locations for "title" and "body" of the blog post.
 
+MILESTONE II UPDATE
+As we approached our seocnd milestone, we implemented a few pivotal changes. To begin, we are now using a PostgreSQL database. Alex was able to create his GUI client, which can write to the PostgreSQL database. 
+We decided to re-work our webpage in lieu of something simpler. James was following the Offical Racket Web Application documentation as he created the first milestone, and the things he implemented were just unncessary for what we are trying to accomplish. We now have a much more concise and to the point web application. 
+
+The web client can now parse in information into html tags from our PostgreSQL database via for loop iteration. 
+
+We also implemented some sleek external css sheets which have revolutionized the look of our blogging platform. 
+
 ### Final Presentation (last week of semester)
 Handle an HTTP "get" request from the web server
 Parse and display collection of blog post documents to the web page.
