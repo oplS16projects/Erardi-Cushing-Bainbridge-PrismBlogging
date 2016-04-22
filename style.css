@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "alegreya-sans.thin";
+  src: url('alegreya-sans.thin.ttf');
+}
+
+
+/*uploaded font for all text but title*/
+
+@font-face {
+  font-family: "alegreya-sans.regular";
+  src: url('alegreya-sans.regular.ttf');
+}
+
+
+@font-face {
+  font-family: "VCR_OSD_MONO_1";
+  src: url('VCR_OSD_MONO_1.001.ttf');
+}
+
+
+@font-face {
+  font-family: "Ailerons-Typeface";
+  src: url('Ailerons-Typeface.otf');
+}
+
+body{
+	font-family: 'alegreya-sans.regular';
+	background-color: #1c1c1c;
+	color: white;
+}
+
+#postBod{
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#comCount{
+	color: grey;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 0px;
+	font-size: 13px;
+	text-align: right;
+}
+
+
+.posts{
+	padding-top: 15px;
+	width: 40vw;
+	left: 0;
+	right: 0;
+ 	margin: 0 auto;
+ 	padding: 0px;
+ 	text-align: center;
+ 	align-content: center;
+}
+
+.post{
+ 	border: solid .5px black;
+        text-align: center;
+        padding-right: 20px;
+	width: 40vw;
+	display: block;
+}
+
+a{
+	padding-top: 60px;
+	color: grey;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+}
+
+
+h1{
+	color: white;
+	font-family: 'alegreya-sans.regular';
+}
