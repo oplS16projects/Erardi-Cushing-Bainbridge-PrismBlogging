@@ -42,6 +42,7 @@
                              (min-width 200)
                              (parent this)))
     (define output (new text-field% (label "blog")
+                        (style '(multiple))
                         (min-height 450)
                         (min-width 400)
                         (stretchable-width 300)
