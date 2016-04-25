@@ -2,6 +2,9 @@
 (require db)
 (require xml)
 
+(provide printStuff3)
+
+
 (define pgc
     (postgresql-connect
      #:server "localhost"
@@ -38,6 +41,8 @@
   ;;(vector-map (lambda (x) (display (getPost x))) posts)
   ;;)
 
+(define root "<div>")
+(define closeRoot "</div>")
 (define openTitle "<h2>")
 (define closeTitle "</h2> ")
 
@@ -64,10 +69,20 @@
   (set! markup (string-append markup tempMarkup))
   (set! tempMarkup "")
   )
-
-(define (printStuff3 posts)
-  (map (lambda (row) (makeTitle (getTitle row)) (makeBody (getBody row))) posts)
+(define (makeopenRoot)
+  (set! markup (string-append markup root))
   )
+
+(define (makecloseRoot)
+  (set! markup (string-append markup closeRoot))
+  )
+
+
+(define (printStuff3)
+  (makeopenRoot)
+  (map (lambda (row) (makeTitle (getTitle row)) (makeBody (getBody row))) (allPosts))
+  (makecloseRoot)
+  (string->xexpr markup))
 
          ;;(string->xexpr (string-append newString closeTitle))
          ;;(set! newString (string-append newString (getBody (getPost posts))))
