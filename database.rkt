@@ -2,7 +2,7 @@
 (require db)
 (require xml)
 
-(provide printStuff3)
+(provide displayMarkup)
 
 
 (define pgc
@@ -92,7 +92,7 @@
   )
 
 
-(define (printStuff3)
+(define (displayMarkup)
   (makeopenRoot)
   (map (lambda (row) (makeTitle (getTitle row)) (makeBody (getBody row)) ) (allPosts))
   (makecloseRoot)
