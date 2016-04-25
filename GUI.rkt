@@ -4,11 +4,12 @@
 
 (define pgc
     (postgresql-connect
-     #:server "localhost"
+     #:server "ec2-54-235-64-239.compute-1.amazonaws.com"
      #:port 5432
-     #:user "prism"
-     #:database "blogs"
-     #:password "prism1"))
+     #:user "wnzhkkaivwijul"
+     #:database "dbu5lo07i41k3g"
+     #:password "xF6aT4Dz6iBEyxEywvli5Tm1hN"
+     #:ssl 'yes))
 (define testTitle "I HOPE THIS WORKED")
 (define testBody "THIS SHOULD BE THE BODY") ;;these variables are placeholders for what will be filled with user entered data
 
