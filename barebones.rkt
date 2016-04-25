@@ -1,5 +1,5 @@
 #lang web-server/insta
-(require "postgres.rkt")
+(require "database.rkt")
 (require xml)
 
 ; A blog is a (listof post)
@@ -18,12 +18,11 @@
 (define (start request)
   (render-blog-page BLOG request))
 
-
-(define newString "<p>")
+(define newString "<div><p>")
 (define newNewString "")
 (define (printStuff7)
   (for ([i 4])
-    (set! newString (string-append newString "hello"))) (string->xexpr (string-append newString "</p>")))
+    (set! newString (string-append newString "hello"))) (string->xexpr (string-append newString "</p></div>")))
 (printStuff7)
 
 (display (printStuff7))
@@ -35,7 +34,9 @@
 (define (render-blog-page a-blog request)
   (response/xexpr
    `(html (head (title "My Blog"))
-          (body (h1 "heallo")(div, (printStuff3))))))
+          '(link ([rel "stylesheet"] [type "text/css"] [href
+                                                          "http://alexcushing.com/public/racketstyle.css"]))
+          (body (h1 "prism")(div, (printStuff3))))))
 
 ;recurisive
 (define (printStuff5 start fin)
