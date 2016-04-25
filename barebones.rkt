@@ -36,7 +36,7 @@
    `(html (head (title "My Blog"))
           '(link ([rel "stylesheet"] [type "text/css"] [href
                                                           "http://alexcushing.com/public/racketstyle.css"]))
-          (body (h1 "prism")(div, (printStuff3))))))
+          (body (h1 '(a ((href "http://prsmphoto.com/")) "prism"))(div, (printStuff3))))))
 
 ;recurisive
 (define (printStuff5 start fin)
