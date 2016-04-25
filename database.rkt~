@@ -2,17 +2,13 @@
 (require db)
 (require xml)
 
-(provide printStuff3)
-
-
 (define pgc
     (postgresql-connect
-     #:server "ec2-54-235-64-239.compute-1.amazonaws.com"
+     #:server "localhost"
      #:port 5432
-     #:user "wnzhkkaivwijul"
-     #:database "dbu5lo07i41k3g"
-     #:password "xF6aT4Dz6iBEyxEywvli5Tm1hN"
-     #:ssl 'yes))
+     #:user "prism"
+     #:database "blogs"
+     #:password "prism1"))
 (define testTitle "I HOPE THIS WORKED")
 (define testBody "THIS SHOULD BE THE BODY") ;;these variables arep laceholders for what will be filled with user entered data
 
@@ -42,12 +38,6 @@
   ;;(vector-map (lambda (x) (display (getPost x))) posts)
   ;;)
 
-(define root "<div class='posts'>")
-(define closeRoot "</div>")
-
-(define openPost "<div class='post'>")
-(define closePost "</div>")
-
 (define openTitle "<h2>")
 (define closeTitle "</h2> ")
 
@@ -75,28 +65,9 @@
   (set! tempMarkup "")
   )
 
-(define (makeopenRoot)
-  (set! markup (string-append markup root))
+(define (printStuff3 posts)
+  (map (lambda (row) (makeTitle (getTitle row)) (makeBody (getBody row))) posts)
   )
-
-(define (makecloseRoot)
-  (set! markup (string-append markup closeRoot))
-  )
-
-(define (makeOpenPost)
-  (set! markup (string-append markup openPost))
-  )
-
-(define (makeClosePost)
-  (set! markup (string-append markup closePost))
-  )
-
-
-(define (printStuff3)
-  (makeopenRoot)
-  (map (lambda (row) (makeTitle (getTitle row)) (makeBody (getBody row)) ) (allPosts))
-  (makecloseRoot)
-  (string->xexpr markup))
 
          ;;(string->xexpr (string-append newString closeTitle))
          ;;(set! newString (string-append newString (getBody (getPost posts))))
