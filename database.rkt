@@ -41,7 +41,7 @@
   ;;(vector-map (lambda (x) (display (getPost x))) posts)
   ;;)
 
-(define root "<div>")
+(define root "<div class='posts'>")
 (define closeRoot "</div>")
 (define openTitle "<h2>")
 (define closeTitle "</h2> ")
