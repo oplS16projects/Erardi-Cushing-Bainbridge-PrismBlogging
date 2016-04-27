@@ -16,10 +16,8 @@ Prism is a website for photographers to keep a minimal portfolio of their photog
 
 ##Concepts Demonstrated
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
-Our DOM data was constructed via recursive data structures by recursively callingnour PostgreSQL databsse
-* **Data abstraction** is used to provide access to the elements of the RSS feed.
-* The objects in the OpenGL world are represented with **recursive data structures.**
-* **Symbolic language processing techniques** are used in the parser.
+**Recursion and high level functions** such as map were implemented for writing markup from database information.
+Used **Database Queries** to insert and retrieve information from a PostgreSQL database located in the cloud.
 
 ##External Technology and Libraries
 Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
