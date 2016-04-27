@@ -60,7 +60,7 @@
     (define button
       (new button%
            [label "Submit"]
-           [vert-margin 0]
+           [vert-margin 20]
            [horiz-margin 10]
            [parent panel] ; panel instead of this
            [callback callback]))
