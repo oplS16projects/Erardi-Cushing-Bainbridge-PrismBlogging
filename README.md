@@ -35,12 +35,7 @@ Alex wrote CSS for styling the web page to make it aesthetically pleasing.
 Tyler wrote queries for inserting information into a database as well as retrieving blog posts to wrap in HTML to display and style the posts in James’ web application.
 
 ##Favorite Scheme Expressions
-####Mark (a team member)
-Each team member should identify a favorite expression or procedure, written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody?
-Remember code looks something like this:
-```scheme
-(map (lambda (x) (foldr compose functions)) data)
-```
+
 ####Tyler
 I wrote a function that utilizes a map which uses a lambda expression as well as other functions to write HTML Markup to display the blogs on the page. 
 ```scheme
