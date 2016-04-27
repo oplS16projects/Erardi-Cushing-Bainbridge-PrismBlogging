@@ -23,6 +23,18 @@ Identify the OPL concepts demonstrated in your project. Be brief. A simple list 
 ##External Technology and Libraries
 Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
 
+[The Graphical Interface Toolkit](http://docs.racket-lang.org/gui/index.html)
+Alex used this library to create a GUI interface for creating a blog post (title, body) as well as a success confirmation. 
+
+[Web Applications in Racket](http://docs.racket-lang.org/web-server/)
+James used this library to create a web page for displaying the blog posts in a browser. 
+
+[CSS](https://developer.mozilla.org/en-US/search?q=css) 
+Alex wrote CSS for styling the web page to make it aesthetically pleasing.
+
+[Database](http://docs.racket-lang.org/db/):
+Tyler wrote queries for inserting information into a database as well as retrieving blog posts to wrap in HTML to display and style the posts in James’ web application.
+
 ##Favorite Scheme Expressions
 ####Mark (a team member)
 Each team member should identify a favorite expression or procedure, written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody?
