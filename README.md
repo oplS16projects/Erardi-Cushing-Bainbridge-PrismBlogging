@@ -16,7 +16,9 @@ Prism is a website for photographers to keep a minimal portfolio of their photog
 
 ##Concepts Demonstrated
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
+
 **Recursion and high level functions** such as map were implemented for writing markup from database information.
+
 Used **Database Queries** to insert and retrieve information from a PostgreSQL database located in the cloud.
 
 ##External Technology and Libraries
