@@ -1,1 +1,0 @@
-("6.2" ("86d06e4200ece62ac3a7d259a3cf31193dea76c2" . "40d83018c356eafe4d6b1534e58bea7423886363") #"/home/tyler/Documents/OPLFinalProject/Erardi-Cushing-Bainbridge-PrismBlogging/database.rkt" (collects #"xml" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"web-server" #"insta" #"insta.rkt") (collects #"web-server" #"insta" #"lang" #"reader.rkt"))
