@@ -66,12 +66,23 @@ I wrote the GUI and this is an example of how you can manipulate the properties.
            [min-width 400]
            [parent panel]))
   ```
+###James
+This snippet is an example of calling a function that writes the markup to the DOM
+```racket
+(define (render-blog-page request)
+  (response/xexpr
+   `(html (head (title "Prism Blog"))
+          '(link ([rel "stylesheet"]
+                  [type "text/css"] [href
+                                     "http://alexcushing.com/public/racketstyle.css"]))
+          (body'(a ((href "http://prsmphoto.com/")) "prism")(div, (displayMarkup))))))
+```
 
 ##Additional Remarks
-Anything else you want to say in your report. Can rename or remove this section.
+Please checkout prism! www.prsmphoto.com
 
 #How to Download and Run
-You may want to link to your latest release for easy downloading by people (such as Mark).
+Download the source files, run GUI.rkt to enter and write blog files, and run barebones.rkt to run the server and see the post after it is submitted
 
 Include what file to run, what to do with that file, how to interact with the app when its running, etc. 
 
