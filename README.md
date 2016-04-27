@@ -1,11 +1,12 @@
-# FP7-webpage Title of Project
-This is a template for using your repo's README.md as your project web page. 
-I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
+# PRISM BLOGGING
+Our project is focused on creating a platform for us to write blogs to update users on changes for our GUI II project website, Prism.
 
 ##Authors
-Person One
+Alex Cushing
 
-Person Two
+Tyler Bainbridge
+
+James Erardi
 
 ##Overview
 A brief description of the project is given here.  The description is 1 to 3 sentences long.  Be concise and clear.
