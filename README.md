@@ -56,7 +56,7 @@ I wrote a function that utilizes a map which uses a lambda expression as well as
 
 ###Alex
 I wrote the GUI and this is an example of how you can manipulate the properties.
-```scheme
+```racket
 (define output
       (new text-field%
            [label "blog"]
