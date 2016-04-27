@@ -14,9 +14,6 @@ Prism is a website for photographers to keep a minimal portfolio of their photog
 ##Screenshot
 ![screenshot of application](https://raw.githubusercontent.com/oplS16projects/Erardi-Cushing-Bainbridge-PrismBlogging/master/Screenshot%20from%202016-04-27%2011-39-55.png)
 
-Here's a demonstration of how to display an image that's uploaded to this repo:
-![screenshot showing env diagram](withdraw.png)
-
 ##Concepts Demonstrated
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
 * **Data abstraction** is used to provide access to the elements of the RSS feed.
