@@ -9,7 +9,7 @@ Tyler Bainbridge
 James Erardi
 
 ##Overview
-A brief description of the project is given here.  The description is 1 to 3 sentences long.  Be concise and clear.
+Prism is a website for photographers to keep a minimal portfolio of their photographs for their friends and other followers to see. For this project we created a GUI interface in which we can write blogs to update users on recent developments in this website, Prism. When a blog is finished, it is submitted and saved into the postgreSQL database. This database is accessed and displayed online using web applications in racket.
 
 ##Screenshot
 (insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
