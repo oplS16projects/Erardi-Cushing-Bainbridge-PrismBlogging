@@ -75,7 +75,5 @@ This snippet is an example of calling a function that writes the markup to the D
 Please checkout prism! www.prsmphoto.com
 
 #How to Download and Run
-Download the source files, run GUI.rkt to enter and write blog files, and run barebones.rkt to run the server and see the post after it is submitted
-
-Include what file to run, what to do with that file, how to interact with the app when its running, etc. 
+Download the source files, run GUI.rkt to enter and write blog files, and run barebones.rkt to run the server and see the post after it is submitted.
 
