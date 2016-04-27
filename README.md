@@ -54,6 +54,19 @@ I wrote a function that utilizes a map which uses a lambda expression as well as
   (string->xexpr markup))
 ```
 
+###Alex
+I wrote the GUI and this is an example of how you can manipulate the properties.
+```scheme
+(define output
+      (new text-field%
+           [label "blog"]
+           [style '(multiple)]
+           [min-height 20]
+           [vert-margin 20]
+           [min-width 400]
+           [parent panel]))
+  ```
+
 ##Additional Remarks
 Anything else you want to say in your report. Can rename or remove this section.
 
