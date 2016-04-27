@@ -43,15 +43,15 @@ Remember code looks something like this:
 ```scheme
 (map (lambda (x) (foldr compose functions)) data)
 ```
-####Lillian (another team member)
-This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
+####Tyler
+I wrote a function that utilizes a map which uses a lambda expression as well as other functions to write HTML Markup to display the blogs on the page. 
 ```scheme
-(let* ((expr (convert-to-regexp (read-line my-in-port)))
-             (matches (flatten
-                       (hash-map *words*
-                                 (lambda (key value)
-                                   (if (regexp-match expr key) key '()))))))
-  matches)
+(define (displayMarkup)
+  (set! markup "")
+  (makeopenRoot)
+  (map (lambda (row) (makeOpenPost) (makeTitle (getTitle row)) (makeBody (getBody row)) (makeClosePost) ) (allPosts))
+  (makecloseRoot)
+  (string->xexpr markup))
 ```
 
 ##Additional Remarks
