@@ -25,22 +25,20 @@
   (createBlogPost title-new-value new-value))
 
 (define blogPost%
-  (class object% ; object% instead of horizontal-panel%
-    ; This argument is explicit now.
-    ; If other code relies on other arguments, specify them here.
+  (class object%
     (init parent)
     (super-new)
     (define panel
-      (new horizontal-panel% ; this new call is explicit now
-           [parent parent]   ; you can later add more arguments
-           [alignment '(left top)])) ; and it won't break things
+      (new horizontal-panel% 
+           [parent parent] 
+           [alignment '(left top)]))
     (define titleoutput
       (new text-field%
-           [label "    title"]
+           [label "title"]
            [min-height 20]
            [min-width 200]
            [vert-margin 20]
-           [horiz-margin 10]
+           [horiz-margin 20]
            [parent panel])) ; panel instead of this
     (define output
       (new text-field%
@@ -56,7 +54,6 @@
       (save title-new-value new-value)
       (send output set-value "")
       (send titleoutput set-value "SUCCESS"))
-      ;(send howisit show #t))
     (define button
       (new button%
            [label "Submit"]
